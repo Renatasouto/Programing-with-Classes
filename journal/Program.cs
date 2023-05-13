@@ -102,8 +102,10 @@ namespace journal
                 using (StreamReader file = new StreamReader(filename+".txt"))
                 {
                     string line = file.ReadLine() ?? "";
-                    while(line != null || line != "")
+                   
+                    while(line != null && line != "")
                     {
+                        
                         string [] parts = line.Split(',');
 
                         if (parts.Length == 3)
@@ -111,6 +113,7 @@ namespace journal
                             Entry entry = new Entry(parts[0], parts[1],parts[2]);
                             journal.AddEntry(entry);
                         }
+                          line = file.ReadLine() ?? "";
                     }
                 }
             }
