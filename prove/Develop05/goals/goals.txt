@@ -1,0 +1,4 @@
+58
+SimpleGoal: aaaaa, 1, ssss, True
+ChecklistGoal: kkkkkk, 46, oooooo, True, 3/3, 44
+EternalGoal: eternalJJJ, 7, FFFF, False
