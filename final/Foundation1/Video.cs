@@ -2,7 +2,6 @@ class Video
 {
     public string Title { get; set; }
     public string VideoAuthor {get; set;}
-    public List<Author> Authors { get; set; }
     public int Length { get; set; }
     public Dictionary<Author, List<Comment>> Comments { get; set; }
 
